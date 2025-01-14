@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contain{
+    width: 80%;
+    margin: 0px auto;
+}
+/* ---------------Navbar-------------- */
+
+.nvb{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+.nvb-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;    
+}
+.nvb-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+}
+.line{
+    color: black;
+    text-decoration: none;
+}
+
+/* ----------Home Pages ------------ */
+/* ------------hero sectoin------------- */
+.hero{
+    background-image: url("https://preview.colorlib.com/theme/coloshop/images/slider_1.jpg");
+    height: 95vh;
+    background-position: 50% 0%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.hero-content{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    h3{
+        font-size: 72px;
+        width: 60%;
+    }
+}
+.hero-btn{
+    background-color: rgb(254, 76, 80);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
+}
+/* ------------section banner------------------- */
+.banner{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    margin: 50px auto;
+    gap: 25px;
+
+}
+.banner-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-card-content{
+    position: absolute;
+    background-color: white;
+    top: auto;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+.banner-card-content:hover{
+    color: rgb(79, 79, 79);
+    background-color: rgba(255, 255, 255, 0.940);
+}
+/* --------------section products------------------ */
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px ,1fr));
+    gap: 20px;
+}
+.products-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    flex-direction: column;
+    gap: 20px;
+    h3{
+        font-size: 28px;
+    }
+    hr{
+        width: 7%;
+        border: 2px solid rgb(254, 76, 80);
+        border-radius: 10px;
+    }
+}
+.type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
+.product{
+    text-align: center;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    padding: 20px;
+    position: relative;
+}
+.product:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    .product-btn{
+        opacity: 1;
+        transition: all .5s ease-out;
+    }
+}
+.sale{
+    position: absolute;
+    top:4% ;
+    right: 10%;
+    background-color: rgb(254, 76, 80);
+    padding: 2px 7px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.new{
+    position: absolute;
+    top: 4% ;
+    left: 10%;
+    background-color: green;
+    padding: 2px 7px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.product-btn{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: rgb(254, 76, 80);
+    color: white;
+    border: none;
+    padding: 10px ;
+    cursor: pointer;
+    opacity: 0;
+}
+.delete{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
